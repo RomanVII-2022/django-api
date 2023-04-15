@@ -68,7 +68,7 @@ class IncidentType(models.Model):
 class Violation(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    action = models.CharField(max_length=100)
+    proposed = models.CharField(max_length=100)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 
