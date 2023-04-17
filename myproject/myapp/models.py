@@ -81,7 +81,7 @@ class Incident(models.Model):
     driver = models.CharField(max_length=100)
     incident = models.ForeignKey(IncidentType, on_delete=models.CASCADE)
     description = models.TextField()
-    action = models.CharField(max_length=100)
+    incidentAction = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
     violation = models.ForeignKey(Violation, on_delete=models.CASCADE)
     incidentDate = models.DateField()
